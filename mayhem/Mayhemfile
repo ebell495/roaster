@@ -1,0 +1,6 @@
+project: roaster
+target: RoasterFuzz
+
+cmds:
+    - cmd: /jazzer --cp=/project/fuzz/src/RoasterFuzz.jar:/project/fuzz/src/libs.jar --target_class=RoasterFuzz
+      libfuzzer: true
